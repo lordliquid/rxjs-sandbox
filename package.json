@@ -1,0 +1,15 @@
+{
+  "name": "rxjs-sandbox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Learning RXJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robert Cutright",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^5.1.0"
+  }
+}
