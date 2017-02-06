@@ -1,8 +1,8 @@
 var Rx = require('rxjs/Rx');
 
 var foo = Rx.Observable.create(function (observer) {
-  console.log('Hello');
-  observer.next(42);
+  //console.log(observer);
+  console.log(observer)
 });
 
 foo.subscribe(function (x) {
@@ -11,3 +11,11 @@ foo.subscribe(function (x) {
 foo.subscribe(function (y) {
   console.log(y);
 });
+
+function func(x) {
+   foo.subscribe(function(x) {
+        return x
+    })
+}
+
+console.log(func(34));
